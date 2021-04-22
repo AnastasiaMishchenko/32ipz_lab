@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <a href="#">Перша</a>
+    <a href="#">Друга</a>
+    <a href="#">Третя</a>
+    <a href="#">Четверта</a>
+  <p></p>
+    <script>
+      var arr = document.getElementsByTagName('a');
+      document.write("Кількість посилань: "+arr.length + "<p></p>")
+      for(var i =0;i<arr.length;i++){}
+      document.write("Текст першого посилання: "+arr[0].innerHTML+"<p></p>")
+      document.write("Текст останнього посилання: "+arr[arr.length-1].innerHTML)
+    </script>
+  </body>
+ </html>

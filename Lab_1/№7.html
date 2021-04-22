@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script type="text/javascript">
+      var mas = [];
+      mas[0] = { name: "Viktoria", model: "Mercedes", vol: 3}
+      mas[1] = { name: "Svitlana", model: "BMW", vol: 3}
+      mas[2] = { name: "Roma", model: "Lexus", vol: 4}
+      mas[3] = { name: "Veronika", model: "Audi", vol: 3}
+      let min = mas[0].vol;
+      for (var i = 0; i < mas.length; i++) {
+          if(mas.vol < min) {
+              min = mas.vol;
+          }
+      }
+      document.write("Мінімальний об'єм двигуна " + min);
+    </script>
+  </head>
+ </html>

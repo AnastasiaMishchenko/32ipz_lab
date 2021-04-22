@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <style>
+      .my-list-item{ color: green;}
+    </style>
+  </head>
+  <body id="body">
+    <h1>Про мене</h1>
+    <ul id="ul">
+      <li class="my-list-item">Ім'я <span id="name"></span></li>
+      <li class="my-list-item">Прізвище <span id="surename"></span></li>
+      <li class="my-list-item">Місто <span id="city"></span></li>
+    </ul>
+
+    <button type="button" onclick="myFunction()">Встановити тип шрифта</button>
+
+    <script>
+      function myFunction(){
+        document.body.style.font = "16px Arial";
+
+        const modifiedName = document.createElement('li');
+        modifiedName.textContent = "Anastasia";
+        ul.replaceChild(modifiedName, ul.children[0]);
+
+        const modifiedSurename = document.createElement('li');
+        modifiedSurename.textContent = "Mishchenko";
+        ul.replaceChild(modifiedSurename, ul.children[1]);
+
+        const modifiedCity = document.createElement('li');
+        modifiedCity.textContent = "Ukrainka";
+        ul.replaceChild(modifiedCity, ul.children[2]);
+      }
+    </script>
+  </body>
+ </html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+
+   P { 
+    margin-left: 40px;
+   }
+  </style> 
+  </head>
+    <body>
+    
+    <h1>Улюблені книги</h1>
+ <div id="list"></div>
+
+<script>
+   var div = document.getElementById('list');
+  var p = document.createElement('p');
+  div.appendChild(p);
+
+  var book = [
+
+ {name:`"Голодні ігри"`, author:`Сюзен Коллінз`, age: 2012},
+ {name:`"Над прірвою у житі"`,author:`Джером Д.Селінджер`, age: 2010},
+ {name:`"До зустрічі з тобою"`, author:`Джоджо Мойес`,age: 2013},
+ {name:`"Зловити велику рибу"`, author:`Девід Лінч`,age: 2017},
+ {name:`"Океан в кінці дороги"`,author:`Ніл Гейман`, age: 2013}
+];
+
+  for (var i = 0, ln = book.length; i < ln; i++) {
+    var li = document.createElement('li');
+    li.innerHTML = book[i].name +" " + book[i].author + " "+ book[i].age ;
+
+    p.appendChild(li);
+
+}
+ </script>
+    </body>
+  
+</html>
